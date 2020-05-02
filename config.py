@@ -19,12 +19,11 @@ class prodConfig(Config):
 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://root:buttonupd@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://root:buttonupd@localhost/awash'
     DEBUG = True
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI= 'postgresql+psycopg2://root:buttonupd@localhost/pitch2'
-
+    SQLALCHEMY_DATABASE_URI= 'postgresql+psycopg2://root:buttonupd@localhost/awash'
 config_options = {
     'development': DevConfig,
     'production': prodConfig,
