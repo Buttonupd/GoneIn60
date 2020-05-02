@@ -1,93 +1,34 @@
-<div class="navbar navbar-inverse" role="navigation">
-  <div class="container-fluid">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/wisdom"> Wisdom</a>
-              <br>
-              
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/funny">Funny</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/love">Love</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/philosophy">Philosophy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/coding">Coding</a>
-            </li>
-    
-          </ul>
-      
-          <a class="navbar-brand" href="/"> More Pitches </a>
-          <ul class="nav navbar-nav navbar-right">
-              {% if current_user.is_authenticated %}
-              <li style="color:white;padding:15px;">{{current_user.username}}</li>
-              <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
-              {% else %}
-              <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
-              {%endif%}
-            </ul>
-            
-              <ul class="nav navbar-nav navbar-right">
-                {% if current_user.is_authenticated %}
-                <li><a href="{{url_for('main.profile',uname=current_user.author)}}">Profile</a></li>
-                <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
-                {% else %}
-                <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
-                {%endif%}
-              </ul>
 
-      </div>
-      <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-              <li><a href="/">Home</a></li>
-      </div>
 
-  </div>
-</div>
-
-<!-- <nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="/">More Pitches</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbar-collapse" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
+       <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: black">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/categories/wisdom">Life</a>
+          <a class="nav-link" href="/categories/wisdom">Wisdom</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/categories/funny">Coding</a>
+          <a class="nav-link" href="/categories/funny">Philosopgy</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/categories/love">Funny</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/categories/philosophy">Funny</a>
+          <a class="nav-link" href="/categories/philosophy">Coding</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/categories/coding">Funny</a>
+          <a class="nav-link" href="/categories/coding">Love</a>
         </li>
 
       </ul>
@@ -107,4 +48,4 @@
         {%endif%}
       </ul>
     </div>
-  </nav> -->
+  </nav>

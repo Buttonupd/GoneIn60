@@ -1,29 +1,10 @@
 .container{
     align-items: center;
     color: gold;
-    background-color: black;
+    background-color:black;
     text-align: center;
+    font-weight: bold;
+    grid-template-columns: unset;
   }
-
-  .card-body.text-info {
-    
-    align-items: center;
-    /* padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 100px;
-    padding-top: 100px; */
-    text-align: center;
-    text-indent: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    font-size: larger;
-    font-style: italic;
-    font-stretch: expanded;
-
-  }
-  p{
-    color: gold;
-  }
-  button{
-    color: chartreuse;
-  }
+/* 
+ 
