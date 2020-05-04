@@ -20,7 +20,7 @@ class prodConfig(Config):
 
 class DevConfig(Config):
     SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://root:buttonupd@localhost/awash'
-    DEBUG = True
+    DEBUG = False
 
 class TestConfig(Config):
     SQLALCHEMY_DATABASE_URI= 'postgresql+psycopg2://root:buttonupd@localhost/awash'
