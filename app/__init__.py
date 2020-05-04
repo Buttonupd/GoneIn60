@@ -8,7 +8,7 @@ from flask_mail import Mail
 from flask_simplemde import SimpleMDE
 from sqlalchemy import create_engine
 
-create_engine = 'postgresql+psycopg2://root:buttonupd@localhost/awash'
+
 simple = SimpleMDE()
 login_manager = LoginManager()
 login_manager._session_protection = 'strong'
@@ -17,7 +17,7 @@ bootstrap = Bootstrap()
 db = SQLAlchemy()
 photos = UploadSet('photos', IMAGES)
 mail = Mail()
-
+create_engine = create_engine('postgresql+psycopg2://root:buttonupd@localhost/awash')
 
 
 
@@ -36,7 +36,7 @@ def create_app(config_name):
     login_manager.init_app(app)
     mail.init_app(app)
     simple.init_app(app)
-
+    
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
