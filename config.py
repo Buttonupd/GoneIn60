@@ -2,7 +2,7 @@ import os
 
 class Config:
     SECRET_KEY =  os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://root:buttonupd@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://root:buttonupd@localhost/awash'
     UPLOADED_PHOTOS_DEST = 'app/static/photo'
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
