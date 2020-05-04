@@ -17,13 +17,13 @@ bootstrap = Bootstrap()
 db = SQLAlchemy()
 photos = UploadSet('photos', IMAGES)
 mail = Mail()
-create_engine = create_engine('postgresql+psycopg2://root:buttonupd@localhost/awash')
+create_engine = create_engine('postgresql+psycopg2://root:buttonupd@localhost/base')
 
 
 
 def create_app(config_name):
     app = Flask(__name__)
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint, url_prefix='/authenticate')

@@ -2,7 +2,7 @@ import os
 
 class Config:
     SECRET_KEY =  os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://root:buttonupd@localhost/awash'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://root:buttonupd@localhost/base'
     UPLOADED_PHOTOS_DEST = 'app/static/photo'
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
@@ -19,13 +19,13 @@ class prodConfig(Config):
 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://root:buttonupd@localhost/awash'
+    SQLALCHEMY_DATABASE_URI =  'postgresql+psycopg2://root:buttonupd@localhost/base'
     DEBUG = True
 
-# class TestConfig(Config):
-#     SQLALCHEMY_DATABASE_URI= 'postgresql+psycopg2://root:buttonupd@localhost/awash'
+class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI= 'postgresql+psycopg2://root:buttonupd@localhost/base'
 config_options = {
     'development': DevConfig,
     'production': prodConfig,
-    'test': TestConfig
+    'test':TestConfig
 }
