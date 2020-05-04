@@ -6,7 +6,7 @@ from flask_login import LoginManager
 from flask_uploads import UploadSet, configure_uploads, IMAGES
 from flask_mail import Mail
 from flask_simplemde import SimpleMDE
-from sqlalchemy import create_engine
+
 
 
 simple = SimpleMDE()
@@ -17,13 +17,13 @@ bootstrap = Bootstrap()
 db = SQLAlchemy()
 photos = UploadSet('photos', IMAGES)
 mail = Mail()
-create_engine = create_engine('postgresql+psycopg2://root:buttonupd@localhost/awash')
+
 
 
 
 def create_app(config_name):
     app = Flask(__name__)
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint, url_prefix='/authenticate')
