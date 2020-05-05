@@ -29,16 +29,18 @@ As a user I would like to:
     Comment on the different pitches and leave feedback.
     See the pitches other people have posted.
 Specifications
-Behaviour 	                Input 	                    Output
-Display pitches categories| On page load 	    |List of various categories 
 
-Display tabs with category| On Tab link click 	|Clickable links to open pitches by category
+Behaviour 	                     Input 	                    Output
+   
+Display pitches categories|     On page load 	    |List of various categories 
 
-Display profile on request| Click profile page 	|Redirected to a page with your profile
+Display tabs with category|     On Tab link click 	|Clickable links to open pitches by category
 
-Display pitches on request| On page load 	    |Each pitch displays author, title, pitch, date comment tab
+Display profile on request|     Click profile page 	|Redirected to a page with your profile
 
-To add a pitch on request | Click an add pitch 	|Redirected to the pitch collection form
+Display pitches on request|     On page load 	    |Each pitch displays author, title, pitch, date comment tab
+
+To add a pitch on request |     Click an add pitch 	|Redirected to the pitch collection form
 
 SetUp / Installation Requirements
 Prerequisites
