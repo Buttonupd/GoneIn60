@@ -1,22 +1,22 @@
 Author
 
-Dan Kariuki
+    Dan Kariuki
 
 Application Name
 
-GoneIn60
+    GoneIn60
 
 Description
 
-An Application which gives users the ability to post/pitch a statement, comment on other statements, register, login into their profiles, and submit updates on their profiles as well as other features.
+    An Application which gives users the ability to post/pitch a statement, comment on other statements, register, login into           their profiles, and submit updates on their profiles as well as other features.
 
 Developers Contact
 
-Dankariuki0101@gmail.com
+    Dankariuki0101@gmail.com
 
 Known Bugs
 
-Server error, but it works.
+    Server error, but it works.
 
 These are the behaviours/features that the application implements for use by a user.
 
@@ -29,12 +29,19 @@ As a user I would like to:
     Comment on the different pitches and leave feedback.
     See the pitches other people have posted.
 Specifications
-Behaviour 	Input 	Output
-Display pitch categories 	On page load 	List of various categories of pitches
-Display tabs with category 	On Tab link click 	Clickable links to open pitches by category
-Display profile 	Click profile page 	Redirected to a page with your profile
-Display pitches 	On page load 	Each pitch displays author, title, pitch, date comment tab
-To add a pitch 	Click an add pitch 	Redirected to the pitch collection form
+
+Behaviour 	                     Input 	                    Output
+   
+Display pitches categories|     On page load 	    |List of various categories 
+
+Display tabs with category|     On Tab link click 	|Clickable links to open pitches by category
+
+Display profile on request|     Click profile page 	|Redirected to a page with your profile
+
+Display pitches on request|     On page load 	    |Each pitch displays author, title, pitch, date comment tab
+
+To add a pitch on request |     Click an add pitch 	|Redirected to the pitch collection form
+
 SetUp / Installation Requirements
 Prerequisites
 
