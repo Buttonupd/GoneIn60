@@ -31,10 +31,15 @@ As a user I would like to:
 Specifications
 Behaviour 	                Input 	                    Output
 Display pitches categories| On page load 	    |List of various categories 
+
 Display tabs with category| On Tab link click 	|Clickable links to open pitches by category
+
 Display profile on request| Click profile page 	|Redirected to a page with your profile
+
 Display pitches on request| On page load 	    |Each pitch displays author, title, pitch, date comment tab
+
 To add a pitch on request | Click an add pitch 	|Redirected to the pitch collection form
+
 SetUp / Installation Requirements
 Prerequisites
 
